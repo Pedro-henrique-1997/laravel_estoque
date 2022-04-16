@@ -21,4 +21,12 @@ Route::get('/teste', function(){
 	return view('teste');
 });
 
+/*
+Route::get('/empresa', function(){
+	return view('empresa/index');
+});
+*/
+
+Route::resource("/empresa", "EmpresaController");
+
 Route::resource("/produtos", "ProdutoController");
